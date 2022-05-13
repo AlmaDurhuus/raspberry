@@ -1,0 +1,78 @@
+/* a e s t h e t i c */
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-size: x-large;
+  text-align: center;
+}
+
+/*vv Top text vv*/
+
+.header {
+  grid-area: header;
+  background-color: rgb(37, 37, 37);
+  border: 5px solid rgb(37, 37, 37);
+  color: white;
+}
+
+.button {
+  background-color: rgb(0, 130, 0);
+  border: 5px solid rgb(0, 72, 4);
+}
+
+.time {
+  grid-area: time;
+  background-color: rgb(2, 47, 0);
+  border: 5px solid rgb(1, 39, 0);
+  color: lime;
+}
+
+.refresh {
+  background-color: rgb(140, 0, 0);
+  border: 5px solid rgb(95, 0, 0);
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*vv Bottom Text vv*/
+
+.Hcontainer {
+  display: grid;
+  width: auto;
+
+  grid-template-areas:
+    "header header header button time time time refresh"
+    "Lcontainer Lcontainer Lcontainer Lcontainer Lcontainer Lcontainer Lcontainer Lcontainer";
+}
+
+.Lcontainer {
+  grid-area: Lcontainer;
+  display: grid;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 30%;
+  max-width: auto;
+  gap: 20px;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: rgb(52, 52, 52);
+  border: 5px solid rgb(37, 37, 37);
+  color: rgb(255, 255, 255);
+}
+
+.Items {
+  display: flex;
+  background-color: rgb(2, 47, 0);
+  border: 5px solid rgb(1, 39, 0);
+  color: lime;
+  align-items: center;
+  justify-content: center;
+}
